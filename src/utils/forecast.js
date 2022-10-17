@@ -18,7 +18,7 @@ const forecast = (longitude, latitude, callback) => {
             } else {
                 timeline = "Day"
             }
-            const output_string = body.current.weather_descriptions[0] + " " + timeline + '. It is ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out. Wind speed is ' + body.current.wind_speed + "! Humidity is " + body.current.humidity + "!"
+            const output_string = body.current.weather_descriptions[0] + " " + timeline + '. It is ' + body.current.temperature + ' degrees out. It feels like ' + body.current.feelslike + ' degrees out. Wind speed is ' + body.current.wind_speed + "! Humidity is " + body.current.humidity + "%"
             callback(undefined, output_string)
         }
     })
